@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1400,
-  "height":900,
+  "width": 800,
+  "height":650,
   "title": " International Visitor Arrivals at Singapore over past one year",
   "projection": {"type": "equalEarth"},
   "layer": [
@@ -18,24 +18,22 @@
       },
       "mark": {"type": "circle", "opacity": 0.7, "tooltip": {"content": "data"}},
       "encoding": {
-        "longitude": {"field": "Longitude", "type": "quantitative"},
-        "latitude": {"field": "Latitude", "type": "quantitative"},
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {
-          "field": "Tourists",
+          "field": "tourists",
           "type": "quantitative",
           "title": "Number of Tourists (Size)",
-          "scale": {"domain": [1000, 2100000],"range":[10,100]}
+          "scale": {"domain": [1000, 2100000],"range":[50,500]}
         },
         "color": {
-          "field": "Tourists",
-          "type": "ordinal",
-          "title": "Number of Tourists (Colour)",
-          "scale": {
-            "domain": [10000, 50000, 100000, 500000],
-            "range": ["#FFDDDD", "#FFAAAA", "#FF7777", "#FF4444", "#FF0000"]
+          "field": "tourists",
+          "type": "quantitative",
+          "title": "Number of Tourists (color)",
+          "scale": {"scheme": "reds"}
         }
       }
     }
-    }
+    
   ]
 }
