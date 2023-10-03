@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "Tourists.csv"
+        "url": "https://raw.githubusercontent.com/matthewCXZ/3179/main/Tourists.csv"
       },
       "mark": {"type": "circle", "opacity": 0.7, "tooltip": {"content": "data"}},
       "encoding": {
