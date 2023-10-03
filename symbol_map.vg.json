@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "../data/Tourists.csv"
+        "url": "Tourists.csv"
       },
       "mark": {"type": "circle", "opacity": 0.7, "tooltip": {"content": "data"}},
       "encoding": {
